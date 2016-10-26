@@ -18,7 +18,7 @@ gulp.task("dev", function() {
 
     //使用webpack-dev-middleware
     var devMiddleware = require("webpack-dev-middleware")(compiler, {
-        publicPath: "/",
+    	publicPath: "/",
         stats: {
             colors: true,
             chunks: false
@@ -28,7 +28,7 @@ gulp.task("dev", function() {
 
     // 开发环境配置代理
     var proxyTable = {
-    	// 匹配所有/rest开头的请求
+        // 匹配所有/rest开头的请求
         '/rest': {
             target: 'http://localhost',
             changeOrigin: true,

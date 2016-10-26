@@ -9,7 +9,7 @@ var browsers = ["Android >= 4.0", "iOS >= 7"];
 
 //webpack基础配置
 var basicConfig = {
-    entry: "./src/main.js",
+    entry: { app: "./src/main.js" },
     output: {
         path: path.resolve(__dirname, "./dist"),
         filename: "./[name].[hash].js"
@@ -45,6 +45,7 @@ var basicConfig = {
 
 //webpack开发环境配置
 var devConfig = {
+    entry: { app: ["./src/main.js", "webpack-hot-middleware/client?noInfo=true&reload=true"] },
     devtool: '#eval-source-map',
     module: {
         loaders: [{
@@ -111,7 +112,7 @@ var proConfig = {
                     module.resource &&
                     /\.js$/.test(module.resource) &&
                     module.resource.indexOf(
-                        path.join(__dirname, '../node_modules')
+                        path.join(__dirname, './node_modules')
                     ) === 0
                 )
             }

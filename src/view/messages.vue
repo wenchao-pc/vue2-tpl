@@ -1,6 +1,6 @@
 <template>
   <div class="cart">
-    <div>消息列表1</div>
+    <div>消息列表</div>
     <ui-nav></ui-nav>
   </div>
 </template>
