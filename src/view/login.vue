@@ -1,7 +1,7 @@
 <template>
   <div>
     <label>
-      <span>用户名</span>
+      <span>用户名1</span>
       <input placeholder="请输入用户名" v-model="userName">
     </label>
     <label>

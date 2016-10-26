@@ -1,6 +1,6 @@
 <template>
   <div class="has-footer">
-
+    <ui-carousel :carousels="carousels"></ui-carousel>
     <ui-nav></ui-nav>
   </div>
 </template>
