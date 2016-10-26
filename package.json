@@ -5,8 +5,8 @@
   "author": "kuo_zi <415690116@qq.com>",
   "private": true,
   "scripts": {
-    "dev": "",
-    "build": "./node_modules/.bin/webpack --progress --colors"
+    "dev": "./node_modules/.bin/gulp dev",
+    "build": "./node_modules/.bin/gulp build"
   },
   "dependencies": {
     "vue": "^2.0.1",
