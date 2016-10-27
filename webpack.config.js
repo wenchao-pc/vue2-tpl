@@ -87,7 +87,7 @@ var proConfig = {
         },
     },
     plugins: [
-        new ExtractTextPlugin("./css/style.[contenthash].css"),
+        new ExtractTextPlugin("./style.[contenthash].css"),
         new webpack.optimize.UglifyJsPlugin({
             compress: {
                 warnings: false
